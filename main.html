@@ -1,1 +1,77 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Profile</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main class="card">
+    <!-- Left: photo + name/profile/email + skills -->
+    <aside class="left">
+      <figure class="photo">
+        <!-- keep your image as profile.jpg in the same folder -->
+        <img src="profile.jpg" alt="Profile photo">
+      </figure>
+
+      <section class="info">
+        <h2 class="section-title">Name</h2>
+        <p class="info-text">Ishika Verma</p>
+
+        <h2 class="section-title">Profile</h2>
+        <p class="info-text">Software Developer</p>
+
+        <h2 class="section-title">Email</h2>
+        <p class="info-text">ishika@example.com</p>
+      </section>
+
+      <section class="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <!-- Each bar uses data-percentage read by JS for animation -->
+        <div class="skill">
+          <span class="label">React • CSS • JavaScript</span>
+          <div class="bar"><span class="fill" data-percentage="95"></span></div>
+          <span class="value">95%</span>
+        </div>
+
+        <div class="skill">
+          <span class="label">Node.js • MongoDB</span>
+          <div class="bar"><span class="fill" data-percentage="90"></span></div>
+          <span class="value">90%</span>
+        </div>
+
+        <div class="skill">
+          <span class="label">C/C++ • Python • Bash</span>
+          <div class="bar"><span class="fill" data-percentage="99"></span></div>
+          <span class="value">99%</span>
+        </div>
+
+        <div class="skill">
+          <span class="label">AWS • Hadoop</span>
+          <div class="bar"><span class="fill" data-percentage="93"></span></div>
+          <span class="value">93%</span>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Right: About me -->
+    <section class="right">
+      <h2 class="section-title">About me</h2>
+      <p class="about">
+        I am a self-starter with a passion for learning and evangelising new technologies.
+        I enjoy building products with the MERN stack and have a strong interest in data structures
+        and algorithms. I like to tackle complex challenges and deliver efficient, reliable solutions.
+      </p>
+      <p class="about">
+        I believe consistent practice and honest effort lead to growth. I’m focused on improving my
+        skills to contribute meaningfully to teams and society.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
